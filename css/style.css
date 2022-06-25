@@ -530,7 +530,11 @@ footer{
     align-items: center;
     margin: 25px;
     border-radius: 50px;
-    border: #7c15ca 1px solid;
+    backdrop-filter: blur(11px) saturate(172%);
+    -webkit-backdrop-filter: blur(11px) saturate(172%);
+    background-color: rgba(255, 255, 255, 0.53);
+    border-radius: 12px;
+    border: 1px solid rgba(154, 29, 243, 0.571);
 }
 .container_market img{
     width: 100%;
@@ -547,16 +551,20 @@ footer{
 }
 .container_market li{
     list-style: none;
-    padding: 5px;
+    padding: 10px;
     margin: 5px;
     border-radius: 100px;
-
+    font-size: 14pt;
     color: #040157;
 }
-.container_market li:hover{
-    background: linear-gradient(250deg, #32a8e8, #7c15ca, #942ff3 );
+.ver_mas:hover{
+    background: linear-gradient(250deg, #32a8e881, #7c15ca90, #942ff3a4 );
     background-size: 100%;
     transition: 1s;
+    color: white;
+}
+.cantidad_ventas{
+    background: linear-gradient(250deg, #32a8e881, #7c15ca90, #942ff3a4 );
     color: white;
 }
 
