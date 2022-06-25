@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300;400&display=swap" rel="stylesheet">
+    <!-- ANIMATION -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- FONTAWESOME -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <!-- START_HEADER_PRODUCTOS -->
+    <header>
+        <div class="container_brand">
+            <img src="/multimedia/brand_final.png" alt="brand_2022">
+        </div>
+        <!-- START_BTN_HEAD_PRODUCTOS -->
+        <nav class="btn_head">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./nosotros.html">Nosotros</a></li>
+                <li><a href="./contacto.html">Contactanos</a></li>
+                <li><a href="./registrar.html">Registrate</a></li>
+                <li><a href="./login.html">Ingresa</a></li>
+                <li class="btn_p_navbar"><a href="./login.html">Publicá Gratis</a></li>
+            </ul>
+        </nav>
+        <!-- END_BTN_HEAD_PRODUCTOS -->
+    </header>
+    <!-- START_FILTER_PRODUCTOS -->
+    <section>
+        <div class="container_filter_principal">
+            <h2>Buscar</h2>
+            <div class="row">
+                <h3>Palabra Clave</h3>
+                <input type="text" name="palabra_clave" placeholder="¿Qué buscas?" class="input_filter">
+            </div>
+            <div class="row">
+                <h5>Ciudad</h5>
+                <select name="selector_donde" class="input_filter">
+                    <option value=>¿Donde?</option>
+                    <option value="buenos_aires">Buenos Aires</option>
+                    <option value="cordoba">Cordoba</option>
+                    <option value="sma">San Martin de los Andes</option>
+                </select>
+            </div>
+            <div class="row">
+                <h3>Categoría</h3>
+                <select name="selector_category" class="input_filter">
+                    <option value=>Todos los productos</option>
+                    <option value="inmuebles">Inmuebles</option>
+                    <option value="autos">Vehículos</option>
+                    <option value="productos">Productos</option>
+                    <option value="moda">Moda</option>
+                    <option value="mineria">Mineria</option>
+                    <option value="nfts">NFTs</option>
+                </select>
+            </div>
+            <div class="row">
+                <div class="row_checkbox">
+                    <input type="checkbox" name="smart_contract">
+                    <label for="smart_contracts">Solo productos por Smart Contract</label>
+                </div>
+            </div>
+            <div class="row">
+                <h3>Precio</h3>
+                <input type="number" name="prince_min" placeholder="Mín.">
+                <input type="number" name="price_max" placeholder="Máx.">
+            </div>
+            <div class="row">
+                <h3>Entrega</h3>
+                <input type="checkbox" name="delivery" checked>
+                <label for="delivery">Envío gratis</label>
+            </div>
+            <div class="row">
+                <h3>Condición</h3>
+                <input type="checkbox" name="todos">
+                <label for="condicion">Todos</label>
+                <input type="checkbox" name="nuevos">
+                <label for="nuevos">Nuevo</label>
+                <input type="checkbox" name="usado">
+                <label for="usado">Usado</label>
+            </div>
+            <div class="row">
+                <button type="submit" class="btn_filter_row">Buscar<i class='bx bx-search-alt'></i></button>
+            </div>
+        </div>
+    </section>
+    <!-- END_FILTER_PRODUTOS -->
+    <!-- START_SECTION_PRODUCTOS -->
+    <section>
+        <div class="container_productos">
+            <div class="content_producto">
+                <div class="img_product">
+                    <img src="" alt="">
+                </div>
+                <div class="info_product">
+                    <h2></h2>
+                    <li><i class='bx bxl-bitcoin'></i></li>
+                    <li><i class='bx bxs-dollar-circle'></i></li>
+                    <li></li>
+                    <li></li>
+                </div>
+                <div class="container_comprar">
+                    <li><a href="">Comprar</a></li>
+                    <li><a href="">Ver mais</a></li>
+                </div>
+            </div>
+            <div class="content_producto">
+                <div class="img_product">
+                    <img src="" alt="">
+                </div>
+                <div class="info_product">
+                    <h2></h2>
+                    <li><i class='bx bxl-bitcoin'></i></li>
+                    <li><i class='bx bxs-dollar-circle'></i></li>
+                    <li></li>
+                    <li></li>
+                </div>
+                <div class="container_comprar">
+                    <li><a href="">Comprar</a></li>
+                    <li><a href="">Ver mais</a></li>
+                </div>
+            </div>
+            <div class="content_producto">
+                <div class="img_product">
+                    <img src="" alt="">
+                </div>
+                <div class="info_product">
+                    <h2></h2>
+                    <li><i class='bx bxl-bitcoin'></i></li>
+                    <li><i class='bx bxs-dollar-circle'></i></li>
+                    <li></li>
+                    <li></li>
+                </div>
+                <div class="container_comprar">
+                    <li><a href="">Comprar</a></li>
+                    <li><a href="">Ver mais</a></li>
+                </div>
+            </div>
+            <div class="content_producto">
+                <div class="img_product">
+                    <img src="" alt="">
+                </div>
+                <div class="info_product">
+                    <h2></h2>
+                    <li><i class='bx bxl-bitcoin'></i></li>
+                    <li><i class='bx bxs-dollar-circle'></i></li>
+                    <li></li>
+                    <li></li>
+                </div>
+                <div class="container_comprar">
+                    <li><a href="">Comprar</a></li>
+                    <li><a href="">Ver mais</a></li>
+                </div>
+            </div>
+            <div class="content_producto">
+                <div class="img_product">
+                    <img src="" alt="">
+                </div>
+                <div class="info_product">
+                    <h2></h2>
+                    <li><i class='bx bxl-bitcoin'></i></li>
+                    <li><i class='bx bxs-dollar-circle'></i></li>
+                    <li></li>
+                    <li></li>
+                </div>
+                <div class="container_comprar">
+                    <li><a href="">Comprar</a></li>
+                    <li><a href="">Ver mais</a></li>
+                </div>
+            </div>
+            <div class="content_producto">
+                <div class="img_product">
+                    <img src="" alt="">
+                </div>
+                <div class="info_product">
+                    <h2></h2>
+                    <li><i class='bx bxl-bitcoin'></i></li>
+                    <li><i class='bx bxs-dollar-circle'></i></li>
+                    <li></li>
+                    <li></li>
+                </div>
+                <div class="container_comprar">
+                    <li><a href="">Comprar</a></li>
+                    <li><a href="">Ver mais</a></li>
+                </div>
+            </div>
+            <div class="content_producto">
+                <div class="img_product">
+                    <img src="" alt="">
+                </div>
+                <div class="info_product">
+                    <h2></h2>
+                    <li><i class='bx bxl-bitcoin'></i></li>
+                    <li><i class='bx bxs-dollar-circle'></i></li>
+                    <li></li>
+                    <li></li>
+                </div>
+                <div class="container_comprar">
+                    <li><a href="">Comprar</a></li>
+                    <li><a href="">Ver mais</a></li>
+                </div>
+            </div>
+            <div class="content_producto">
+                <div class="img_product">
+                    <img src="" alt="">
+                </div>
+                <div class="info_product">
+                    <h2></h2>
+                    <li><i class='bx bxl-bitcoin'></i></li>
+                    <li><i class='bx bxs-dollar-circle'></i></li>
+                    <li></li>
+                    <li></li>
+                </div>
+                <div class="container_comprar">
+                    <li><a href="">Comprar</a></li>
+                    <li><a href="">Ver mais</a></li>
+                </div>
+            </div>
+            <div class="content_producto">
+                <div class="img_product">
+                    <img src="" alt="">
+                </div>
+                <div class="info_product">
+                    <h2></h2>
+                    <li><i class='bx bxl-bitcoin'></i></li>
+                    <li><i class='bx bxs-dollar-circle'></i></li>
+                    <li></li>
+                    <li></li>
+                </div>
+                <div class="container_comprar">
+                    <li><a href="">Comprar</a></li>
+                    <li><a href="">Ver mais</a></li>
+                </div>
+            </div>
+            <div class="content_producto">
+                <div class="img_product">
+                    <img src="" alt="">
+                </div>
+                <div class="info_product">
+                    <h2></h2>
+                    <li><i class='bx bxl-bitcoin'></i></li>
+                    <li><i class='bx bxs-dollar-circle'></i></li>
+                    <li></li>
+                    <li></li>
+                </div>
+                <div class="container_comprar">
+                    <li><a href="">Comprar</a></li>
+                    <li><a href="">Ver mais</a></li>
+                </div>
+            </div>
+            <div class="content_producto">
+                <div class="img_product">
+                    <img src="" alt="">
+                </div>
+                <div class="info_product">
+                    <h2></h2>
+                    <li><i class='bx bxl-bitcoin'></i></li>
+                    <li><i class='bx bxs-dollar-circle'></i></li>
+                    <li></li>
+                    <li></li>
+                </div>
+                <div class="container_comprar">
+                    <li><a href="">Comprar</a></li>
+                    <li><a href="">Ver mais</a></li>
+                </div>
+            </div>
+            <div class="content_producto">
+                <div class="img_product">
+                    <img src="" alt="">
+                </div>
+                <div class="info_product">
+                    <h2></h2>
+                    <li><i class='bx bxl-bitcoin'></i></li>
+                    <li><i class='bx bxs-dollar-circle'></i></li>
+                    <li></li>
+                    <li></li>
+                </div>
+                <div class="container_comprar">
+                    <li><a href="">Comprar</a></li>
+                    <li><a href="">Ver mais</a></li>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END_SECTION_PRODUCTOS -->
+    <!-- START_FOOTER -->
+    <footer>
+        <div class="btn_footer">
+            <ul>
+                <li><a href="./nosotros.html">Nosotros</a></li>
+                <li><a href="./helpcenter.html">Ayuda</a></li>
+                <li><a href="./tyc.html">Terminos & Condiciones</a></li>
+                <li><a href="./tyc.html">Politicas de Privacidad</a></li>
+                <li><a href="./comercios.html" class="btn_back_top">⬆</a></li>
+            </ul>
+        </div>
+
+        <div class="container_btn_rs">
+            <li><i class='bx bx-envelope'></i><a href="./pages/contacto.html">support@marktbit.com</a></li>
+            <li><i class='bx bxl-whatsapp'></i><a href="#link_whatsapp">54 11 54789564</a></li>
+            <li><i class='bx bxl-instagram'></i><a href="#Instagram">Instagram</a></li>
+            <li><i class='bx bxl-telegram'></i><a href="#Telegram">Telegram</a></li>
+            <li><i class='bx bxl-twitter'></i><a href="Twitter">Twitter</a></li>
+        </div>
+        <div class="creditos">
+            <h5>© 2022 <span class="author">AJALA</span></h5>
+        </div>
+    </footer>
+    <!-- END_FOOTER -->
+</body>
+
+</html>
