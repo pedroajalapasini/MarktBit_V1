@@ -1,6 +1,6 @@
 # MarktBit_proyect
 <h1 align="center">Hi 👋, I'm Pedro Pasini</h1>
-<h3 align="center">I'm curious and passionate about technology, focused on front end development, Brazilian living in Argentina.I'm curious and passionate about technology, focused on front end development, Brazilian living in Argentina.</h3>
+<h3 align="center">I'm curious and passionate about technology, focused on front end development, Brazilian living in Argentina.</h3>
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
