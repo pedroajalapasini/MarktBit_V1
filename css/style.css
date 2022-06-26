@@ -917,6 +917,46 @@ h1{
 .container_filter_principal{
     margin-top: 5vh;
 }
+.delivery_filter{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    align-content: stretch;
+}
+.delivery_filter label{
+    font-size: 13pt;
+    margin-left: 8px;
+}
+.filter_condiction{
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    align-content: center;
+    flex-wrap: nowrap;
+}
+.filter_condiction label{
+    font-size: 13pt;
+    margin-left: 8px;
+}
+.btn_filter{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+.btn_filter_button{
+    border: none;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+    width: 100%;
+}
+.btn_filter_button:hover{
+    background: linear-gradient(100deg, #32a8e897, #7c15ca8e, #d001d088);
+}
 
 /* MEDIA RESPONSIVE - MOBILE */
 
@@ -963,16 +1003,20 @@ h1{
     }
 
     /* comercios */
+    .container_filter_market{
+        margin-top: 10vh;
+    }
     .search_city,
     .search_category {
         border-radius: 50px;
+
     }
 
-    .container_market ul {
-        flex-wrap: wrap;
-        flex-direction: column;
-        align-items: center;
-        align-content: center;
+    .container_market ul {  
+    padding: 0;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
     }
 
     /*nosotros*/
