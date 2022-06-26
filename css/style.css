@@ -69,8 +69,7 @@ header {
 
 /* buscador_home */
 .container_buscador_home {
-    height: 5vh;
-    margin: 1rem;
+    margin: 5px;
 }
 
 .buscador_home {
@@ -981,7 +980,7 @@ h1{
     /* INDEX */
     /* header */
     header {
-        margin-top: 1rem;
+        margin-top: 4rem;
     }
 
     .buscador_home {
@@ -990,10 +989,11 @@ h1{
         justify-content: space-evenly;
         flex-wrap: wrap;
         align-items: center;
+        margin-top: 3rem;
     }
 
     .container_gif_home {
-        margin-top: 6rem;
+        margin-top: 8rem;
     }
 
     .container_category_home {
