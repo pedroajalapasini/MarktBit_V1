@@ -913,7 +913,10 @@ h1{
 }
 
 /* --------------------- END_TYC------------------- */
-/* --------------------- START_RECUPERAR------------------- */
+/* --------------------- START_PRODUCTOS------------------- */
+.container_filter_principal{
+    margin-top: 5vh;
+}
 
 /* MEDIA RESPONSIVE - MOBILE */
 
