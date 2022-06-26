@@ -132,7 +132,7 @@ button {
 .container_gif_home {
     margin-top: 4rem;
     margin-bottom: 1rem;
-    background: url(/multimedia/gif-home.png) center center/contain no-repeat padding-box;
+    background: url(../multimedia/gif-home.png) center center/contain no-repeat padding-box;
     width: 100%;
     height: 50vh;
     animation: gifAnim 8s ease 0s 1 normal forwards;
