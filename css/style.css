@@ -412,9 +412,6 @@ button {
 .content_publicar_title{
     animation: AnimContentPublic 10s linear 0s 4 normal forwards; ;
 }
-.content_publicar_two{
-    animation: ;
-}
 
 .container_info_publicar {
     display: flex;
