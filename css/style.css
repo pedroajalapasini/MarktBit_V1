@@ -48,7 +48,7 @@ header {
 
 /* buscador_home */
 .container_buscador_home {
-    margin-top: 11vh;
+    margin-top: 50vh;
     margin-left: 2rem;
     margin-right: 2rem;
 }
@@ -93,18 +93,24 @@ button {
     transition: -1s;
 }
 .carousel-inner{
+    margin-top: 1vh;
     margin-bottom: 5vh;
+    display: flex;
+}
+.carousel{
+    display: flex;
+    justify-content: center;
 }
 /* container_categorias */
 .container_category_home {
-    height: 15vh;
+    height: 16vh;
     background: linear-gradient(100deg, #32a8e897, #7c15ca8e, #d001d088);
     display: flex;
     justify-content: space-around;
     align-content: center;
     align-items: center;
     flex-wrap: wrap;
-    margin: 2px;
+    margin-top: 10px;
 }
 
 .category_home_content {
@@ -116,6 +122,7 @@ button {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 10px;
 }
 
 .category_home_content a {
@@ -914,8 +921,8 @@ h1{
 
 /* --------------------- END_TYC------------------- */
 /* --------------------- START_PRODUCTOS------------------- */
-.container_filter_principal{
-    margin-top: 5vh;
+.filter_productos{
+    margin-top: 25vh;
 }
 .delivery_filter{
     display: flex;
@@ -957,7 +964,9 @@ h1{
 .btn_filter_button:hover{
     background: linear-gradient(100deg, #32a8e897, #7c15ca8e, #d001d088);
 }
-
+.container_filter_productos_desktop{
+    margin-top: 30vh;
+}
 /* MEDIA RESPONSIVE - MOBILE */
 
 @media only screen and (max-width: 600px) {
@@ -968,16 +977,20 @@ h1{
         margin-top: 4rem;
     }
 
+    .container_buscador_home{
+        margin-top: 20rem;
+    }
     .buscador_home {
         flex-direction: column;
         align-content: center;
         justify-content: space-evenly;
         flex-wrap: wrap;
         align-items: center;
-        margin-top: 3rem;
     }
-
-
+    .carousel_index{
+        margin-top: 20vh;
+        width: 100%;
+    }
     .container_category_home {
         height: 30vh;
         justify-content: space-evenly;
@@ -986,6 +999,9 @@ h1{
         flex-wrap: wrap;
         margin: 2px;
         flex-direction: row;
+    }
+    .category_home_content{
+        margin-top: 3vh;
     }
 
     /* footer  */

@@ -24,7 +24,7 @@
 <body>
     <!-- START_HEADER_PRODUCTOS -->
     <header>
-        <nav class="navbar fixed-top navbar-expand-xl p-3 mb-2 bg-white text-dark">
+        <nav class="navbar fixed-top navbar-expand-xl p-3 mb-2 bg-white text-dark " >
             <div class="container-md">
                 <a class="navbar-brand" href="../index.html"><img src="../multimedia/brand_final.png" alt="brand_2022"
                         width="250px"></a>
@@ -58,9 +58,12 @@
             </div>
         </nav>
     </header>
-    <!-- START_FILTER_PRODUCTOS -->
-    <section>
-        <div class="container_filter_principal">
+    <!-- END_HEADER_PRODUCTOS -->
+
+    <!-- START_FILTER_PRODUCTOS-MOBILE -->
+    <div class="filter_productos fixed-bottom ">
+        <div
+            class="container_filter_principal_mobile d-block d-sm-block d-md-none d-lg-none position-absolute bottom-0 end-0 m-1">
             <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop"
                 aria-controls="staticBackdrop">
                 Filtro
@@ -142,256 +145,262 @@
                 </div>
             </div>
         </div>
-        <!-- <h2>Buscar</h2> 
-            <div class="row">
-                <h3>Palabra Clave</h3>
-                <input type="text" name="palabra_clave" placeholder="¿Qué buscas?" class="input_filter">
-            </div>
-            <div class="row">
-                <h5>Ciudad</h5>
-                <select name="selector_donde" class="input_filter">
-                    <option value=>¿Donde?</option>
-                    <option value="buenos_aires">Buenos Aires</option>
-                    <option value="cordoba">Cordoba</option>
-                    <option value="sma">San Martin de los Andes</option>
-                </select>
-            </div>
-            <div class="row">
-                <h3>Categoría</h3>
-                <select name="selector_category" class="input_filter">
-                    <option value=>Todos los productos</option>
-                    <option value="inmuebles">Inmuebles</option>
-                    <option value="autos">Vehículos</option>
-                    <option value="productos">Productos</option>
-                    <option value="moda">Moda</option>
-                    <option value="mineria">Mineria</option>
-                    <option value="nfts">NFTs</option>
-                </select>
-            </div>
-            <div class="row">
-                <div class="row_checkbox">
-                    <input type="checkbox" name="smart_contract">
-                    <label for="smart_contracts">Solo productos por Smart Contract</label>
+    </div>
+    <!-- END_FILTER_PRODUCTOS-MOBILE -->
+    <!-- START_FILTER_PRODUCTOS-DESKTOP -->
+    <section class="container_filter_productos_desktop">
+        <div class="filter_productos_desktop d-none d-lg-block .d-xl-block float-start w-25 p-3 shadow-lg p-3 mb-2 bg-body rounded ms-2 me-2">
+            <div class="filter_principal_desktop">
+                <h2>Buscar</h2>
+                <div class="p-2 bg-light shadow p-3 mb-3 bg-body rounded g-col-2">
+                    <h3>Palabra Clave</h3>
+                    <input type="text" name="palabra_clave" placeholder="¿Qué buscas?" class="input_filter">
+                </div>
+                <div class="p-2 bg-light shadow p-3 mb-3 bg-body rounded">
+                    <h5>Ciudad</h5>
+                    <select name="selector_donde" class="input_filter">
+                        <option value=>¿Donde?</option>
+                        <option value="buenos_aires">Buenos Aires</option>
+                        <option value="cordoba">Cordoba</option>
+                        <option value="sma">San Martin de los Andes</option>
+                    </select>
+                </div>
+                <div class="p-2 bg-light shadow p-3 mb-3 bg-body rounded">
+                    <h3>Categoría</h3>
+                    <select name="selector_category" class="input_filter">
+                        <option value=>Todos los productos</option>
+                        <option value="inmuebles">Inmuebles</option>
+                        <option value="autos">Vehículos</option>
+                        <option value="productos">Productos</option>
+                        <option value="moda">Moda</option>
+                        <option value="mineria">Mineria</option>
+                        <option value="nfts">NFTs</option>
+                    </select>
+                </div>
+                <div class="p-2 bg-light shadow p-3 mb-3 bg-body rounded">
+                    <div class="row_checkbox">
+                        <input type="checkbox" name="smart_contract">
+                        <label for="smart_contracts">Solo productos por Smart Contract</label>
+                    </div>
+                </div>
+                <div class="p-2 bg-light shadow p-3 mb-3 bg-body rounded">
+                    <h3>Precio</h3>
+                    <input type="number" name="prince_min" placeholder="Mín." class="mb-2">
+                    <input type="number" name="price_max" placeholder="Máx.">
+                </div>
+                <div class="p-2 bg-light shadow p-3 mb-3 bg-body rounded">
+                    <h3>Entrega</h3>
+                    <input type="checkbox" name="delivery" checked>
+                    <label for="delivery">Envío gratis</label>
+                </div>
+                <div class="p-2 bg-light shadow p-3 mb-3 bg-body rounded">
+                    <h3>Condición</h3>
+                    <input type="checkbox" name="todos">
+                    <label for="condicion">Todos</label>
+                    <input type="checkbox" name="nuevos">
+                    <label for="nuevos">Nuevo</label>
+                    <input type="checkbox" name="usado">
+                    <label for="usado">Usado</label>
+                </div>
+                <div class="btn_filter">
+                    <button type="submit" class="btn_filter_button">Buscar<i class='bx bx-search-alt'></i></button>
                 </div>
             </div>
-            <div class="row">
-                <h3>Precio</h3>
-                <input type="number" name="prince_min" placeholder="Mín.">
-                <input type="number" name="price_max" placeholder="Máx.">
-            </div>
-            <div class="row">
-                <h3>Entrega</h3>
-                <input type="checkbox" name="delivery" checked>
-                <label for="delivery">Envío gratis</label>
-            </div>
-            <div class="row">
-                <h3>Condición</h3>
-                <input type="checkbox" name="todos">
-                <label for="condicion">Todos</label>
-                <input type="checkbox" name="nuevos">
-                <label for="nuevos">Nuevo</label>
-                <input type="checkbox" name="usado">
-                <label for="usado">Usado</label>
-            </div>
-            <div class="row">
-                <button type="submit" class="btn_filter_row">Buscar<i class='bx bx-search-alt'></i></button>
-            </div>
-        </div>-->
-    </section>
-    <!-- END_FILTER_PRODUTOS -->
-    <!-- START_SECTION_PRODUCTOS -->
-    <section>
-        <div class="container_productos">
-            <div class="content_producto">
-                <div class="img_product">
-                    <img src="" alt="">
+        </div> 
+        <!-- END_FILTER_PRODUTOS-DESKTOP -->
+        <!-- START_SECTION_PRODUCTOS -->
+        <div class="container_productos grid">
+                <div class="content_producto">
+                    <div class="img_product">
+                        <img src="" alt="">
+                    </div>
+                    <div class="info_product">
+                        <h2></h2>
+                        <li><i class='bx bxl-bitcoin'></i></li>
+                        <li><i class='bx bxs-dollar-circle'></i></li>
+                        <li></li>
+                        <li></li>
+                    </div>
+                    <div class="container_comprar">
+                        <li><a href="">Comprar</a></li>
+                        <li><a href="">Ver mais</a></li>
+                    </div>
                 </div>
-                <div class="info_product">
-                    <h2></h2>
-                    <li><i class='bx bxl-bitcoin'></i></li>
-                    <li><i class='bx bxs-dollar-circle'></i></li>
-                    <li></li>
-                    <li></li>
+                <div class="content_producto">
+                    <div class="img_product">
+                        <img src="" alt="">
+                    </div>
+                    <div class="info_product">
+                        <h2></h2>
+                        <li><i class='bx bxl-bitcoin'></i></li>
+                        <li><i class='bx bxs-dollar-circle'></i></li>
+                        <li></li>
+                        <li></li>
+                    </div>
+                    <div class="container_comprar">
+                        <li><a href="">Comprar</a></li>
+                        <li><a href="">Ver mais</a></li>
+                    </div>
                 </div>
-                <div class="container_comprar">
-                    <li><a href="">Comprar</a></li>
-                    <li><a href="">Ver mais</a></li>
+                <div class="content_producto">
+                    <div class="img_product">
+                        <img src="" alt="">
+                    </div>
+                    <div class="info_product">
+                        <h2></h2>
+                        <li><i class='bx bxl-bitcoin'></i></li>
+                        <li><i class='bx bxs-dollar-circle'></i></li>
+                        <li></li>
+                        <li></li>
+                    </div>
+                    <div class="container_comprar">
+                        <li><a href="">Comprar</a></li>
+                        <li><a href="">Ver mais</a></li>
+                    </div>
                 </div>
-            </div>
-            <div class="content_producto">
-                <div class="img_product">
-                    <img src="" alt="">
+                <div class="content_producto">
+                    <div class="img_product">
+                        <img src="" alt="">
+                    </div>
+                    <div class="info_product">
+                        <h2></h2>
+                        <li><i class='bx bxl-bitcoin'></i></li>
+                        <li><i class='bx bxs-dollar-circle'></i></li>
+                        <li></li>
+                        <li></li>
+                    </div>
+                    <div class="container_comprar">
+                        <li><a href="">Comprar</a></li>
+                        <li><a href="">Ver mais</a></li>
+                    </div>
                 </div>
-                <div class="info_product">
-                    <h2></h2>
-                    <li><i class='bx bxl-bitcoin'></i></li>
-                    <li><i class='bx bxs-dollar-circle'></i></li>
-                    <li></li>
-                    <li></li>
+                <div class="content_producto">
+                    <div class="img_product">
+                        <img src="" alt="">
+                    </div>
+                    <div class="info_product">
+                        <h2></h2>
+                        <li><i class='bx bxl-bitcoin'></i></li>
+                        <li><i class='bx bxs-dollar-circle'></i></li>
+                        <li></li>
+                        <li></li>
+                    </div>
+                    <div class="container_comprar">
+                        <li><a href="">Comprar</a></li>
+                        <li><a href="">Ver mais</a></li>
+                    </div>
                 </div>
-                <div class="container_comprar">
-                    <li><a href="">Comprar</a></li>
-                    <li><a href="">Ver mais</a></li>
+                <div class="content_producto">
+                    <div class="img_product">
+                        <img src="" alt="">
+                    </div>
+                    <div class="info_product">
+                        <h2></h2>
+                        <li><i class='bx bxl-bitcoin'></i></li>
+                        <li><i class='bx bxs-dollar-circle'></i></li>
+                        <li></li>
+                        <li></li>
+                    </div>
+                    <div class="container_comprar">
+                        <li><a href="">Comprar</a></li>
+                        <li><a href="">Ver mais</a></li>
+                    </div>
                 </div>
-            </div>
-            <div class="content_producto">
-                <div class="img_product">
-                    <img src="" alt="">
+                <div class="content_producto">
+                    <div class="img_product">
+                        <img src="" alt="">
+                    </div>
+                    <div class="info_product">
+                        <h2></h2>
+                        <li><i class='bx bxl-bitcoin'></i></li>
+                        <li><i class='bx bxs-dollar-circle'></i></li>
+                        <li></li>
+                        <li></li>
+                    </div>
+                    <div class="container_comprar">
+                        <li><a href="">Comprar</a></li>
+                        <li><a href="">Ver mais</a></li>
+                    </div>
                 </div>
-                <div class="info_product">
-                    <h2></h2>
-                    <li><i class='bx bxl-bitcoin'></i></li>
-                    <li><i class='bx bxs-dollar-circle'></i></li>
-                    <li></li>
-                    <li></li>
+                <div class="content_producto">
+                    <div class="img_product">
+                        <img src="" alt="">
+                    </div>
+                    <div class="info_product">
+                        <h2></h2>
+                        <li><i class='bx bxl-bitcoin'></i></li>
+                        <li><i class='bx bxs-dollar-circle'></i></li>
+                        <li></li>
+                        <li></li>
+                    </div>
+                    <div class="container_comprar">
+                        <li><a href="">Comprar</a></li>
+                        <li><a href="">Ver mais</a></li>
+                    </div>
                 </div>
-                <div class="container_comprar">
-                    <li><a href="">Comprar</a></li>
-                    <li><a href="">Ver mais</a></li>
+                <div class="content_producto">
+                    <div class="img_product">
+                        <img src="" alt="">
+                    </div>
+                    <div class="info_product">
+                        <h2></h2>
+                        <li><i class='bx bxl-bitcoin'></i></li>
+                        <li><i class='bx bxs-dollar-circle'></i></li>
+                        <li></li>
+                        <li></li>
+                    </div>
+                    <div class="container_comprar">
+                        <li><a href="">Comprar</a></li>
+                        <li><a href="">Ver mais</a></li>
+                    </div>
                 </div>
-            </div>
-            <div class="content_producto">
-                <div class="img_product">
-                    <img src="" alt="">
+                <div class="content_producto">
+                    <div class="img_product">
+                        <img src="" alt="">
+                    </div>
+                    <div class="info_product">
+                        <h2></h2>
+                        <li><i class='bx bxl-bitcoin'></i></li>
+                        <li><i class='bx bxs-dollar-circle'></i></li>
+                        <li></li>
+                        <li></li>
+                    </div>
+                    <div class="container_comprar">
+                        <li><a href="">Comprar</a></li>
+                        <li><a href="">Ver mais</a></li>
+                    </div>
                 </div>
-                <div class="info_product">
-                    <h2></h2>
-                    <li><i class='bx bxl-bitcoin'></i></li>
-                    <li><i class='bx bxs-dollar-circle'></i></li>
-                    <li></li>
-                    <li></li>
+                <div class="content_producto">
+                    <div class="img_product">
+                        <img src="" alt="">
+                    </div>
+                    <div class="info_product">
+                        <h2></h2>
+                        <li><i class='bx bxl-bitcoin'></i></li>
+                        <li><i class='bx bxs-dollar-circle'></i></li>
+                        <li></li>
+                        <li></li>
+                    </div>
+                    <div class="container_comprar">
+                        <li><a href="">Comprar</a></li>
+                        <li><a href="">Ver mais</a></li>
+                    </div>
                 </div>
-                <div class="container_comprar">
-                    <li><a href="">Comprar</a></li>
-                    <li><a href="">Ver mais</a></li>
-                </div>
-            </div>
-            <div class="content_producto">
-                <div class="img_product">
-                    <img src="" alt="">
-                </div>
-                <div class="info_product">
-                    <h2></h2>
-                    <li><i class='bx bxl-bitcoin'></i></li>
-                    <li><i class='bx bxs-dollar-circle'></i></li>
-                    <li></li>
-                    <li></li>
-                </div>
-                <div class="container_comprar">
-                    <li><a href="">Comprar</a></li>
-                    <li><a href="">Ver mais</a></li>
-                </div>
-            </div>
-            <div class="content_producto">
-                <div class="img_product">
-                    <img src="" alt="">
-                </div>
-                <div class="info_product">
-                    <h2></h2>
-                    <li><i class='bx bxl-bitcoin'></i></li>
-                    <li><i class='bx bxs-dollar-circle'></i></li>
-                    <li></li>
-                    <li></li>
-                </div>
-                <div class="container_comprar">
-                    <li><a href="">Comprar</a></li>
-                    <li><a href="">Ver mais</a></li>
-                </div>
-            </div>
-            <div class="content_producto">
-                <div class="img_product">
-                    <img src="" alt="">
-                </div>
-                <div class="info_product">
-                    <h2></h2>
-                    <li><i class='bx bxl-bitcoin'></i></li>
-                    <li><i class='bx bxs-dollar-circle'></i></li>
-                    <li></li>
-                    <li></li>
-                </div>
-                <div class="container_comprar">
-                    <li><a href="">Comprar</a></li>
-                    <li><a href="">Ver mais</a></li>
-                </div>
-            </div>
-            <div class="content_producto">
-                <div class="img_product">
-                    <img src="" alt="">
-                </div>
-                <div class="info_product">
-                    <h2></h2>
-                    <li><i class='bx bxl-bitcoin'></i></li>
-                    <li><i class='bx bxs-dollar-circle'></i></li>
-                    <li></li>
-                    <li></li>
-                </div>
-                <div class="container_comprar">
-                    <li><a href="">Comprar</a></li>
-                    <li><a href="">Ver mais</a></li>
-                </div>
-            </div>
-            <div class="content_producto">
-                <div class="img_product">
-                    <img src="" alt="">
-                </div>
-                <div class="info_product">
-                    <h2></h2>
-                    <li><i class='bx bxl-bitcoin'></i></li>
-                    <li><i class='bx bxs-dollar-circle'></i></li>
-                    <li></li>
-                    <li></li>
-                </div>
-                <div class="container_comprar">
-                    <li><a href="">Comprar</a></li>
-                    <li><a href="">Ver mais</a></li>
-                </div>
-            </div>
-            <div class="content_producto">
-                <div class="img_product">
-                    <img src="" alt="">
-                </div>
-                <div class="info_product">
-                    <h2></h2>
-                    <li><i class='bx bxl-bitcoin'></i></li>
-                    <li><i class='bx bxs-dollar-circle'></i></li>
-                    <li></li>
-                    <li></li>
-                </div>
-                <div class="container_comprar">
-                    <li><a href="">Comprar</a></li>
-                    <li><a href="">Ver mais</a></li>
-                </div>
-            </div>
-            <div class="content_producto">
-                <div class="img_product">
-                    <img src="" alt="">
-                </div>
-                <div class="info_product">
-                    <h2></h2>
-                    <li><i class='bx bxl-bitcoin'></i></li>
-                    <li><i class='bx bxs-dollar-circle'></i></li>
-                    <li></li>
-                    <li></li>
-                </div>
-                <div class="container_comprar">
-                    <li><a href="">Comprar</a></li>
-                    <li><a href="">Ver mais</a></li>
-                </div>
-            </div>
-            <div class="content_producto">
-                <div class="img_product">
-                    <img src="" alt="">
-                </div>
-                <div class="info_product">
-                    <h2></h2>
-                    <li><i class='bx bxl-bitcoin'></i></li>
-                    <li><i class='bx bxs-dollar-circle'></i></li>
-                    <li></li>
-                    <li></li>
-                </div>
-                <div class="container_comprar">
-                    <li><a href="">Comprar</a></li>
-                    <li><a href="">Ver mais</a></li>
+                <div class="content_producto">
+                    <div class="img_product">
+                        <img src="" alt="">
+                    </div>
+                    <div class="info_product">
+                        <h2></h2>
+                        <li><i class='bx bxl-bitcoin'></i></li>
+                        <li><i class='bx bxs-dollar-circle'></i></li>
+                        <li></li>
+                        <li></li>
+                    </div>
+                    <div class="container_comprar">
+                        <li><a href="">Comprar</a></li>
+                        <li><a href="">Ver mais</a></li>
+                    </div>
                 </div>
             </div>
         </div>
