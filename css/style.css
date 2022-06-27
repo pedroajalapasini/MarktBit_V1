@@ -986,6 +986,13 @@ h1{
 .info_product li{
     list-style: none;
     font-size: 13pt;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    margin: 2px;
 
 }
 .bx-check-shield{
@@ -1011,8 +1018,9 @@ h1{
 .container_comprar li{
     list-style: none;
     margin: 2px;
-    padding: 2px;
+    padding: 3px;
     border-radius: 150px;
+    background: linear-gradient(250deg, #32a8e89e, #7c15ca90, #942ff382);
 }
 .container_comprar li a{
     text-decoration: none;
