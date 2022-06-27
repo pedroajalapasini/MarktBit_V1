@@ -680,6 +680,7 @@ h1{
 .content_nosotros p{
     padding: 2px;
     margin: 2px;
+    
 }
 
 .container_info_nosotros {
@@ -922,7 +923,7 @@ h1{
 /* --------------------- END_TYC------------------- */
 /* --------------------- START_PRODUCTOS------------------- */
 .filter_productos{
-    margin-top: 25vh;
+    margin-top: 0;
 }
 .delivery_filter{
     display: flex;
@@ -964,9 +965,73 @@ h1{
 .btn_filter_button:hover{
     background: linear-gradient(100deg, #32a8e897, #7c15ca8e, #d001d088);
 }
-.container_filter_productos_desktop{
-    margin-top: 30vh;
+.productos_desktop{
+    margin-top:20vh ;
 }
+
+.img_product img{
+    object-fit: cover;
+}
+.info_product{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.info_product h2{
+    text-align: center;
+}
+.info_product li{
+    list-style: none;
+    font-size: 13pt;
+
+}
+.bx-check-shield{
+    color: rgb(126, 55, 4);
+    font-size: 16pt;
+}
+.bx-user-check{
+    color: rgb(4, 48, 101);
+    font-size: 16pt;
+}
+.bx-map{
+    color: rgb(91, 91, 91);
+    font-size: 16pt;
+}
+
+.container_comprar{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.container_comprar li{
+    list-style: none;
+    margin: 2px;
+    padding: 2px;
+    border-radius: 150px;
+}
+.container_comprar li a{
+    text-decoration: none;
+    color: #040157;
+}
+.container_comprar li:hover{
+    background: linear-gradient(250deg, #32a8e8, #7c15ca, #942ff3);
+    background-size: 100%;
+    padding: 5px;
+    transition: 1s;
+    border-radius: 150px;
+}
+.container_comprar li a:hover{
+    color: white;
+}
+.content_product_desktop .row{
+    margin-top: 15vh;
+}
+
 /* MEDIA RESPONSIVE - MOBILE */
 
 @media only screen and (max-width: 600px) {
@@ -1041,5 +1106,24 @@ h1{
         grid-template-columns: repeat(1, 1fr);
         margin-top: 5px;
         align-items: center;
+    }
+    /* productos     */
+    .productos_container{
+        width: 100%;
+    }
+    /* .productos_desktop{ 
+        margin-top: 70vh;
+    }*/
+    .product_mobile{
+        margin-top: 25vh;
+    }
+    .row{
+        flex-direction: column;
+        align-content: flex-start;
+        justify-content: center;
+    }
+    .filter_productos{
+        margin-right: 3vw;
+        margin-bottom: 1vh;
     }
 }
