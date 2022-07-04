@@ -1089,12 +1089,14 @@ main h1{
 
     /* contacto/login/registar/recuperar */
     .contacto_form {
-        width: 70%;
+        width: 90%;
+        margin-top: 15vh;
+
     }
 
     /* comercios */
     .container_filter_market{
-        margin-top: 10vh;
+        margin-top: 25vh;
     }
     .search_city,
     .search_category {
