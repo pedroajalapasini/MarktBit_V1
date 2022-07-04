@@ -636,8 +636,7 @@ footer {
 /* --------------------- END_COMERCIO ------------------- */
 
 /* --------------------- START_NOSOTROS ------------------- */
-
-h1{
+main h1{
     margin-top: 10vh;
     text-align: center;
     color: #040157;
@@ -1110,10 +1109,13 @@ h1{
     }
 
     /*nosotros*/
+    main h1{
+        margin-top: 25vh;
+    }
     .container_nosotros {
         grid-template-rows: repeat(6, 400px);
         grid-template-columns: repeat(1, 1fr);
-        margin-top: 15vh;
+        margin-top: 3vh;
         align-items: center;
     }
     /* productos     */
