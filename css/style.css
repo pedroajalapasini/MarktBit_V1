@@ -857,7 +857,7 @@ h1{
     box-shadow: 10px 10px 49px 0px #32a8e897;
     -webkit-box-shadow: 10px 10px 49px 0px #7c15ca8e;
     -moz-box-shadow: 10px 10px 49px 0px #d001d088;
-    margin-top: 6vh;
+    margin-top: 15vh;
     margin-bottom: 6vh;
     padding-bottom: 1vh;
     margin-left: 1vh;
@@ -900,7 +900,7 @@ h1{
     box-shadow: 10px 10px 49px 0px #32a8e897;
     -webkit-box-shadow: 10px 10px 49px 0px #7c15ca8e;
     -moz-box-shadow: 10px 10px 49px 0px #d001d088;
-    margin-top: 13vh;
+    margin-top: 15vh;
     margin-bottom: 6vh;
     padding: 1vh;
     margin-left: 1vh;
@@ -1049,8 +1049,8 @@ h1{
     }
 
     .container_buscador_home{
-        margin-top: 15rem;
-        margin-bottom: 15rem;
+        margin-top: 18rem;
+        margin-bottom: 60rem;
     }
     .buscador_home {
         flex-direction: column;
@@ -1060,8 +1060,10 @@ h1{
         align-items: center;
     }
     .carousel_index{
-        margin-top: 55vh;
-        width: 100%;
+        margin-top: 50vh;
+    }
+    .carousel{
+        margin-top: 10vh;
     }
     .container_category_home {
         height: 30vh;
@@ -1111,7 +1113,7 @@ h1{
     .container_nosotros {
         grid-template-rows: repeat(6, 400px);
         grid-template-columns: repeat(1, 1fr);
-        margin-top: 5px;
+        margin-top: 15vh;
         align-items: center;
     }
     /* productos     */
@@ -1133,4 +1135,12 @@ h1{
         margin-right: 3vw;
         margin-bottom: 1vh;
     }
+    /* ayuda */
+    .container_hc{
+        margin-top: 25vh;
+    }
+    /* tyc */
+    .container_tyc{
+    margin-top: 25vh;
+}
 }
